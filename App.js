@@ -1,8 +1,10 @@
-import React from 'react'
-import { Provider } from 'mobx-react'
+import "./src/config/devtools";
 
-import store from './src/stores'
-import Navigation from './src/Navigation'
+import React from "react";
+import { Provider } from "mobx-react";
+
+import store from "./src/stores";
+import Navigation from "./src/Navigation";
 
 export default class App extends React.Component {
   render() {
@@ -10,6 +12,6 @@ export default class App extends React.Component {
       <Provider {...store}>
         <Navigation />
       </Provider>
-    )
+    );
   }
 }

@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19003,
-  "packagerPid": 69431,
-  "expoServerNgrokUrl": "https://2g-bgg.fernandodefranca.mobiletest.exp.direct",
-  "packagerNgrokUrl": "https://packager.2g-bgg.fernandodefranca.mobiletest.exp.direct",
-  "ngrokPid": 69446
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

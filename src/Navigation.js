@@ -1,16 +1,27 @@
-import React from 'react'
-import { createStackNavigator, createAppContainer } from 'react-navigation'
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
-import HomeScreen from './screens/HomeScreen'
-import ConnectedScreen from './screens/ConnectedScreen'
+import colors from "./constants/colors";
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
+import Home from "./screens/HomeScreen";
+import Marcas from "./screens/Marcas";
+import Modelos from "./screens/Modelos";
+import Anos from "./screens/Anos";
+import Detalhes from "./screens/Detalhes";
+
+const AppNavigator = createStackNavigator(
+  {
+    Home,
+    Marcas,
+    Modelos,
+    Anos,
+    Detalhes,
   },
-  Connected: {
-    screen: ConnectedScreen,
-  },
-})
+  {
+    defaultNavigationOptions: {
+      headerTintColor: colors.primary.medium,
+      headerBackTitle: null,
+    }
+  }
+);
 
-export default createAppContainer(AppNavigator)
+export default createAppContainer(AppNavigator);
