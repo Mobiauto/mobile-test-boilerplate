@@ -67,6 +67,10 @@ const primary = {
   medium: '#00B0AA',
   dark: '#00666e',
 }
+const basic = {
+  black:'#000000',
+  white: '#ffffff'
+}
 const secondary = {
   light: gray.light,
   medium: gray.medium,
@@ -78,6 +82,7 @@ const textArea = {
 }
 
 const colors = {
+  basic,
   orange,
   purple,
   blue,
