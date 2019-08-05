@@ -4,7 +4,15 @@ const _defaultInitialState = {
   isFetching: false,
   someData: { someKey: 'somevalue' },
   brands: [],
-  models: {}
+  yearsModel: [],
+  models: {},
+  vehicle: {},
+  filters: {
+    type: 'caminhoes',
+    brandCode: '',
+    modelCode: '',
+    yearCode: ''
+  }
 }
 
 class UIStore {
@@ -13,12 +21,15 @@ class UIStore {
   }
 
   setInitialState = (initialState) => {
-    const { isFetching, someData, brands, models } = initialState
+    const { isFetching, someData, brands, models, filters, yearsModel, vehicle } = initialState
 
     this.isFetching = isFetching
     this.someData = someData
     this.brands = brands
     this.models = models
+    this.filters = filters
+    this.yearsModel = yearsModel
+    this.vehicle = vehicle
   }
 
   setIsFetching = (isFetching) => {
@@ -36,6 +47,21 @@ class UIStore {
   updateModelList = (value) => {
     this.models = value
   }
+
+  updateVehicle = (value) => {
+    this.vehicle = value
+  }
+
+  updateFilter = (value) => {
+    this.filters = { 
+      ...this.filters,
+      ...value
+    }
+  }
+
+  updateYearsModelList = (value) => {
+    this.yearsModel = value
+  }
   
 }
 
@@ -44,9 +70,15 @@ export default decorate(UIStore, {
   someData: observable,
   brands: observable,
   models: observable,
+  filters: observable,
+  yearsModel: observable,
+  vehicle: observable,
   setInitialState: action,
   setIsFetching: action,
   updateSomeData: action,
   updateList: action,
-  updateModelList: action
+  updateModelList: action,
+  updateFilter: action,
+  updateYearsModelList: action,
+  updateVehicle: action
 })

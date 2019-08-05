@@ -6,6 +6,7 @@ const endpoints = {
     byBrand: type => `${type}/marcas`,
     byModel: code => `/${code}/modelos`,
     byYear: code => `/${code}/anos`,
+    byYearCode: code => `/${code}`,
 };
 
 const mobiauto = axios.create({
@@ -20,6 +21,10 @@ const apiService = {
       mobiauto.get(endpoints.byBrand(type)),
     getModels: (type, idBrand) =>
       mobiauto.get(`${endpoints.byBrand(type)}${endpoints.byModel(idBrand)}`),
+    getModelsYears: (type, idBrand, idModel) =>
+      mobiauto.get(`${endpoints.byBrand(type)}${endpoints.byModel(idBrand)}${endpoints.byYear(idModel)}`),
+    getModelsYearsCode: (type, idBrand, idModel, yearCode) =>
+      mobiauto.get(`${endpoints.byBrand(type)}${endpoints.byModel(idBrand)}${endpoints.byYear(idModel)}${endpoints.byYearCode(yearCode)}`)
   }
 };
 

@@ -4,6 +4,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 import HomeScreen from './screens/HomeScreen'
 import ModelScreen from './screens/ModelScreen'
 import ConnectedScreen from './screens/ConnectedScreen'
+import VehicleScreen from './screens/VehicleScreen'
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -14,6 +15,9 @@ const AppNavigator = createStackNavigator({
   },
   Model: {
     screen: ModelScreen
+  },
+  Vehicle: {
+    screen: VehicleScreen
   }
 })
 
