@@ -6,8 +6,27 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint ."
+  },
+  "jest": {
+    "preset": "@testing-library/react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.(ts|tsx)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "coverageDirectory": "__tests__/coverage",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/coverage/",
+      "/__tests__/*.ts/"
+    ],
+    "collectCoverage": false
   },
   "dependencies": {
     "react": "16.9.0",
@@ -24,8 +43,5 @@
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.58.0",
     "react-test-renderer": "16.9.0"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
