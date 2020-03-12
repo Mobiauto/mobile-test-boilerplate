@@ -36,6 +36,19 @@
     ],
     "collectCoverage": false
   },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/mobiletest.app",
+        "build": "xcodebuild -workspace ios/mobiletest.xcworkspace -scheme mobiletest -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11 Pro"
+        }
+      }
+    },
+    "test-runner": "jest"
+  },
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5"
