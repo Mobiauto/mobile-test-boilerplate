@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "e2e-ios": "npx detox build -c ios.sim.debug && npx detox test -c ios.sim.debug --passWithNoTests",
     "e2e-android-debug": "npx detox build -c android.emu.debug && npx detox test -c android.emu.debug --passWithNoTests",
-    "e2e-android-release": "npx detox build -c android.emu.release && npx detox test -c android.emu.release --passWithNoTests"
+    "e2e-android-release": "npx detox build -c android.emu.release && npx detox test -c android.emu.release --passWithNoTests",
+    "coveralls": "cat ./__tests__/coverage/lcov.info | coveralls"
   },
   "jest": {
     "preset": "@testing-library/react-native",
