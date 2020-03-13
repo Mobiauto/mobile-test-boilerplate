@@ -1,5 +1,8 @@
 # Testing for Mobile Developer
 
+![CI](https://github.com/Mobiauto/mobile-test-boilerplate/workflows/CI/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/Mobiauto/mobile-test-boilerplate/badge.svg)](https://coveralls.io/github/Mobiauto/mobile-test-boilerplate)
+
 The test consists of consulting this [API](http://deividfortuna.github.io/fipe/) and bringing the results on the screen in the best possible way.
 
 The idea is to filter the API information in 4 steps or different screens: Brands, Models, Years and Value.
