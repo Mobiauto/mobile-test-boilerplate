@@ -11,7 +11,7 @@ Good luck!
 ```
 $ git clone https://github.com/Mobiauto/mobile-test-boilerplate
 $ cd mobile-boilerplate
-$ npm i
+$ yarn i
 ```
 
 ### Running
