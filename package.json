@@ -70,6 +70,7 @@
     "test-runner": "jest"
   },
   "dependencies": {
+    "immutable": "^4.0.0-rc.12",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-redux": "^7.2.0",
