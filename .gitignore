@@ -59,4 +59,4 @@ buck-out/
 /ios/Pods/
 
 # Coverage
-__tests__/coverage/*
+coverage/*
