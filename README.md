@@ -1,3 +1,5 @@
+![Badge confidential](http://img.shields.io/static/v1?label=SECURITY&message=PUBLICO&color=green&style=for-the-badge)
+
 # Testing for Mobile Developer
 
 ![CI](https://github.com/Mobiauto/mobile-test-boilerplate/workflows/CI/badge.svg)
