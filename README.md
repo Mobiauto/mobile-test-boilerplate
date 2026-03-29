@@ -9,6 +9,9 @@ The test consists of consulting this [API](http://deividfortuna.github.io/fipe/)
 
 The idea is to filter the API information in 4 steps or different screens: Brands, Models, Years and Value.
 
+Tip: Use `Redux` to `state management` .
+
+
 Good luck!
 
 ### Installation
